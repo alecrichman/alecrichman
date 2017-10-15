@@ -68,13 +68,13 @@ a:hover {
 
 @media (max-width: 991px) {
   .navbar-brand {
-    font-size: 3rem;
+    font-size: 2rem;
     visibility: visible;
     opacity: 1;
   }
 
   .name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
 }
