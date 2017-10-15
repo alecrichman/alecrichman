@@ -56,6 +56,7 @@ a:hover {
 .name {
   font-family: "Rouge Script", cursive;
   font-size: 9rem;
+  font-weight: normal;
   transition: 0.25s linear;
 }
 
