@@ -8,7 +8,7 @@ $(document).ready(function () {
         if (target.length) {
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 1000);
+          }, 500);
           return false;
         }
       }
@@ -22,10 +22,11 @@ $(document).ready(function () {
         hH = mastheadName.outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
-    if (wS < (hT - hH + wH) && (hT < wS) && (wS - wH < hT - hH)){
+    if (wS > (hT + hH - wH) && (hT < wS) && (wS + wH > hT + hH)){
       navbarName.css({"opacity": "1", "visibility": "visible"}) && mastheadName.css("opacity", "0")
     } else {
       navbarName.css({"opacity": "0", "visibility": "hidden"}) && mastheadName.css("opacity", "1")
     }
   });
+
 });
