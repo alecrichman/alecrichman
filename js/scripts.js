@@ -29,13 +29,21 @@ $(document).ready(function () {
     }
   });
 
-  $(".navbar-nav>li>a, .navbar-brand").on("click", function(){
+  $(".navbar-brand, .nav-link").on("click", function(){
     $(".navbar-collapse").collapse("hide");
   });
 
   $(function() {
     var hamburger = $(".hamburger");
     hamburger.on("click", function(e) {
+      hamburger.toggleClass("is-active");
+    });
+  });
+
+  $(function() {
+    var link = $(".navbar-brand, .nav-link");
+    var hamburger = $(".hamburger");
+    link.on("click", function(e) {
       hamburger.toggleClass("is-active");
     });
   });
