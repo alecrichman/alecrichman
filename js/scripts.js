@@ -29,4 +29,15 @@ $(document).ready(function () {
     }
   });
 
+  $(".navbar-nav>li>a, .navbar-brand").on("click", function(){
+    $(".navbar-collapse").collapse("hide");
+  });
+
+  $(function() {
+    var hamburger = $(".hamburger");
+    hamburger.on("click", function(e) {
+      hamburger.toggleClass("is-active");
+    });
+  });
+
 });
