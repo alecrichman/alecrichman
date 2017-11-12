@@ -15,6 +15,22 @@ $(document).ready(function () {
     });
   });
 
+  $(function() {
+    var brand = $(".navbar-brand");
+    var link = $(".nav-link");
+    var collapse = $(".navbar-collapse");
+    var hamburger = $(".hamburger");
+    brand.add(link).click(function() {
+      collapse.collapse("hide");
+    });
+    link.add(hamburger).click(function() {
+      hamburger.toggleClass("is-active");
+    });
+    brand.click(function() {
+      hamburger.removeClass("is-active");
+    })
+  });
+
   $(window).scroll(function() {
     var navbarName = $(".navbar-brand");
     var mastheadName = $(".name");
@@ -27,25 +43,6 @@ $(document).ready(function () {
     } else {
       navbarName.css({"opacity": "0", "visibility": "hidden"}) && mastheadName.css("opacity", "1")
     }
-  });
-
-  $(".navbar-brand, .nav-link").on("click", function(){
-    $(".navbar-collapse").collapse("hide");
-  });
-
-  $(function() {
-    var hamburger = $(".hamburger");
-    hamburger.on("click", function(e) {
-      hamburger.toggleClass("is-active");
-    });
-  });
-
-  $(function() {
-    var link = $(".navbar-brand, .nav-link");
-    var hamburger = $(".hamburger");
-    link.on("click", function(e) {
-      hamburger.toggleClass("is-active");
-    });
   });
 
 });
