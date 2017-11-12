@@ -160,7 +160,7 @@ a:hover {
 
   .navbar-brand {
     font-size: 2rem;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
   }
 
