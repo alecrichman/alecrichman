@@ -164,6 +164,10 @@ a:hover {
     opacity: 1;
   }
 
+  a:hover {
+    color: #fff !important;
+  }
+
   .name {
     font-size: 4rem;
   }
