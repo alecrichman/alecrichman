@@ -32,16 +32,16 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function() {
-    var navbarName = $(".navbar-brand");
-    var mastheadName = $(".name");
-    var hT = mastheadName.offset().top,
-        hH = mastheadName.outerHeight(),
+    var brand = $(".navbar-brand");
+    var masthead = $(".name");
+    var hT = masthead.offset().top,
+        hH = masthead.outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH) && (hT < wS) && (wS + wH > hT + hH)){
-      navbarName.css({"opacity": "1", "visibility": "visible"}) && mastheadName.css("opacity", "0")
+    if (wS > (hT + hH - wH) && (hT < wS) && (wS + wH > hT + hH)) {
+      brand.css({"opacity": "1", "visibility": "visible"}) && masthead.css("opacity", "0")
     } else {
-      navbarName.css({"opacity": "0", "visibility": "hidden"}) && mastheadName.css("opacity", "1")
+      brand.css({"opacity": "0", "visibility": "hidden"}) && masthead.css("opacity", "1")
     }
   });
 
