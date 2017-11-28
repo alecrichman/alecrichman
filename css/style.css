@@ -4,7 +4,7 @@ h1 {
   font-size: 5rem;
 }
 
-h2, h3 {
+h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -149,10 +149,7 @@ a:hover {
   color: #000;
 }
 
-@media (max-width: 991px) {
-  h1 {
-    font-size: 3rem;
-  }
+@media (max-width: 575px) {
 
   h2 {
     font-size: 1rem;
@@ -160,8 +157,6 @@ a:hover {
 
   .navbar-brand {
     font-size: 2rem;
-    visibility: hidden;
-    opacity: 1;
   }
 
   .name {
