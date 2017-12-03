@@ -45,8 +45,6 @@ hr {
   border: 0;
   margin: 0;
   overflow: visible; }
-  .hamburger:hover {
-    opacity: 0.7; }
 
 .hamburger-box {
   width: 40px;
@@ -128,20 +126,39 @@ a:hover {
 }
 
 .masthead {
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.mastheadText {
   text-align: center;
   color: #fff;
-  background-image: url(../images/background.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .name {
   font-family: "Rouge Script", cursive;
-  font-size: 9rem;
+  font-size: 10rem;
   font-weight: 400;
   transition: opacity 0.25s linear;
+}
+
+.mastheadBackground {
+  background-image: url(../images/background.jpg);
+  background-attachment: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(25%) contrast(75%);
 }
 
 .about {
@@ -149,10 +166,50 @@ a:hover {
   color: #000;
 }
 
+@media (max-width: 991px) {
+
+  a:hover {
+    color: #fff !important;
+  }
+
+  a:active {
+    color: #808080 !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  a:hover {
+    color: #fff !important;
+  }
+
+  a:active {
+    color: #808080 !important;
+  }
+
+  .name {
+    font-size: 7rem;
+  }
+
+}
+
 @media (max-width: 575px) {
+
+  h1 {
+    font-size: 3rem;
+  }
 
   h2 {
     font-size: 1rem;
+  }
+
+  a:hover {
+    color: #fff !important;
+  }
+
+  a:active {
+    color: #808080 !important;
   }
 
   .navbar-brand {
