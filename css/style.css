@@ -176,6 +176,14 @@ a:hover {
     color: #808080 !important;
   }
 
+  .fb-icon {
+    padding-right: 0.5rem;
+  }
+
+  .ig-icon {
+    padding-left: 0.5rem;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -186,6 +194,14 @@ a:hover {
 
   a:active {
     color: #808080 !important;
+  }
+
+  .fb-icon {
+    padding-right: 0.5rem;
+  }
+
+  .ig-icon {
+    padding-left: 0.5rem;
   }
 
   .name {
@@ -214,6 +230,14 @@ a:hover {
 
   .navbar-brand {
     font-size: 2rem;
+  }
+
+  .fb-icon {
+    padding-right: 0.5rem;
+  }
+
+  .ig-icon {
+    padding-left: 0.5rem;
   }
 
   .name {
